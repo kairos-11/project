@@ -12,4 +12,4 @@ app.mount('/static', StaticFiles(directory='frontend/static'), name='static')
 
 @app.get('/')
 async def index_page(request: Request):
-    return templates.TemplateResponse('main.html', {'request': request})
+    return templates.TemplateResponse('index.html', {'request': request})
